@@ -1,0 +1,208 @@
+/* ==============================
+LOGIN PAGE – SELISE STYLE CSS
+Use with: login.html
+File name: login.css
+============================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ==============================
+BACKGROUND WRAPPER
+============================== */
+
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background image + overlay */
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("selise-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ==============================
+LOGIN CARD
+============================== */
+
+.login-box {
+    width: 360px;
+    background: rgba(255,255,255,0.96);
+    padding: 40px;
+    border-radius: 14px;
+
+    box-shadow:
+        0px 12px 30px rgba(0,0,0,0.25);
+
+    animation: fadeSlide 0.6s ease;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==============================
+SELISE LOGO
+============================== */
+
+.selise-logo {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 140px;
+}
+
+/* ==============================
+HEADINGS
+============================== */
+
+.logo {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0067b8;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: gray;
+    font-size: 14px;
+}
+
+/* ==============================
+FORM INPUTS
+============================== */
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #0067b8;
+    box-shadow: 0 0 5px rgba(0,103,184,0.2);
+}
+
+/* ==============================
+BUTTON
+============================== */
+
+button {
+    width: 100%;
+    background: #0067b8;
+    color: white;
+
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background: #0056a3;
+    transform: translateY(-1px);
+}
+
+/* ==============================
+FOOTER LINKS
+============================== */
+
+.footer-links {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: #0067b8;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 480px) {
+
+.login-box {
+    width: 90%;
+    padding: 30px;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+}
+.login-wrapper {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.35),
+            rgba(0,0,0,0.35)
+        ),
+        url("selise-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("c:\Users\user\Desktop\images.png");
+}
+body {
+    margin: 0;
+
+    background: url("selise-bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
