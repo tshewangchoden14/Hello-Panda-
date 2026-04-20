@@ -1,0 +1,327 @@
+<!-- ========================= -->
+<!-- ADMIN DASHBOARD PAGE -->
+<!-- Save as admin-dashboard.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<style>
+body{
+font-family:Segoe UI, sans-serif;
+margin:0;
+background:#f5f6fa;
+}
+
+.navbar{
+background:#0067b8;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+}
+
+.nav-links a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+}
+
+.container{
+padding:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+margin-bottom:25px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.table{
+width:100%;
+border-collapse:collapse;
+}
+
+.table th, .table td{
+padding:12px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+.btn{
+padding:6px 12px;
+border:none;
+cursor:pointer;
+border-radius:4px;
+}
+
+.approve{background:green;color:white;}
+.reject{background:red;color:white;}
+.update{background:orange;color:white;}
+
+.low-stock{
+color:red;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div>Office Inventory Admin</div>
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">Requests</a>
+<a href="#">Inventory</a>
+<a href="#">Reports</a>
+<a href="#">Settings</a>
+</div>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Incoming Requests</h2>
+<table class="table">
+<tr>
+<th>Employee</th>
+<th>Item</th>
+<th>Quantity</th>
+<th>Urgency</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Sonam</td>
+<td>Notepad</td>
+<td>5</td>
+<td>High</td>
+<td>Pending</td>
+<td>
+<button class="btn approve">Approve</button>
+<button class="btn reject">Reject</button>
+</td>
+</tr>
+
+<tr>
+<td>Karma</td>
+<td>Pens</td>
+<td>10</td>
+<td>Medium</td>
+<td>Pending</td>
+<td>
+<button class="btn approve">Approve</button>
+<button class="btn reject">Reject</button>
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>Inventory Status</h2>
+<table class="table">
+<tr>
+<th>Item</th>
+<th>Available Quantity</th>
+</tr>
+
+<tr>
+<td>Notepad</td>
+<td>25</td>
+</tr>
+
+<tr>
+<td>Pens</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td>Slippers</td>
+<td class="low-stock">4 (Low Stock)</td>
+</tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>Reports Overview</h2>
+<ul>
+<li>Most requested item: Notepad</li>
+<li>Monthly usage summary available</li>
+<li>Quarterly report export ready</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+<!-- ========================= -->
+<!-- EMPLOYEE DASHBOARD PAGE -->
+<!-- Save as employee-dashboard.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Dashboard</title>
+
+<style>
+body{
+font-family:Segoe UI, sans-serif;
+margin:0;
+background:#f5f6fa;
+}
+
+.navbar{
+background:#0067b8;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+}
+
+.nav-links a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+}
+
+.container{
+padding:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+margin-bottom:25px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+input, select, textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+padding:10px 18px;
+background:#0067b8;
+color:white;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+
+.status-pending{color:orange;}
+.status-approved{color:green;}
+.status-rejected{color:red;}
+
+.table{
+width:100%;
+border-collapse:collapse;
+}
+
+.table th, .table td{
+padding:12px;
+border-bottom:1px solid #ddd;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div>Employee Inventory Portal</div>
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">My Requests</a>
+<a href="#">Suggestions</a>
+<a href="#">Settings</a>
+</div>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Submit New Request</h2>
+
+<form>
+<label>Item Name</label>
+<input type="text" required>
+
+<label>Quantity</label>
+<input type="number" required>
+
+<label>Purpose</label>
+<textarea required></textarea>
+
+<label>Urgency Level</label>
+<select>
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<button>Submit Request</button>
+</form>
+</div>
+
+<div class="card">
+<h2>My Requests</h2>
+
+<table class="table">
+<tr>
+<th>Item</th>
+<th>Quantity</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Notebook</td>
+<td>5</td>
+<td class="status-approved">Approved</td>
+</tr>
+
+<tr>
+<td>Tea Bags</td>
+<td>2</td>
+<td class="status-rejected">Rejected</td>
+</tr>
+
+<tr>
+<td>Pens</td>
+<td>10</td>
+<td class="status-pending">Pending</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+<link rel="stylesheet" href="dashboard.css">
+<
+<
