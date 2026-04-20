@@ -1,0 +1,131 @@
+<!-- ========================= -->
+<!-- LOGIN PAGE WITH SELISE BACKGROUND -->
+<!-- Save as login.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office Inventory Login</title>
+
+<!-- Connect shared dashboard stylesheet -->
+<link rel="stylesheet" href="login.css">
+
+<style>
+
+/* Page specific login styling */
+
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* SELISE background image */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ), url("selise-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-box {
+    width: 360px;
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+}
+
+.logo {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0067b8;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: gray;
+}
+
+.role-select {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #0067b8;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Optional SELISE logo styling */
+.selise-logo {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 140px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-wrapper">
+
+<div class="login-box">
+
+<!-- Replace with actual SELISE logo file -->
+<img src="selise-logo.png" class="selise-logo">
+
+<div class="logo">Office Inventory Portal</div>
+
+<div class="subtitle">Sign in to continue</div>
+
+<form>
+
+<label>Email Address</label>
+<input type="email" placeholder="example@selise.ch" required>
+
+<label>Password</label>
+<input type="password" placeholder="Enter password" required>
+
+<label>Select Role</label>
+<select class="role-select" required>
+<option value="">Choose role</option>
+<option>Employee</option>
+<option>Admin</option>
+</select>
+
+<button type="submit">Sign In</button>
+
+</form>
+
+<div class="footer-links">
+<a href="#">Forgot password?</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
