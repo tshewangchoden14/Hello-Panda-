@@ -9,6 +9,7 @@ Office Supplies Request System
 Currently, users request services through informal channels like chat or email.
 This causes delays, missing requests, and confusion in tracking status.
 A structured system will improve efficiency and transparency.
+
 ---
 
 ## 2. User Story
@@ -16,6 +17,7 @@ A structured system will improve efficiency and transparency.
 As a employee at SELISE Bhutan,
 I want to request office supplies though a form,
 So that my request are properly tracked and approved quickly.
+
 ---
 
 ## 3. Acceptance Criteria
