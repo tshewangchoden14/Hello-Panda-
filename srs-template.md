@@ -160,3 +160,387 @@ This document describes system overview, user roles, constraints, functional req
 *The "big picture" section. Non-specialists read this and specialists skim it.*
 
 ### 2.1 · Product Perspective
+The Office Supplies Request System is a standalone web-based internal organizational tool.
+
+**System interfaces:**
+
+- Organizational authentication system (optional future integration)
+
+**User interfaces:**
+
+- Web browser interface
+
+**Hardware interfaces:**
+
+- Desktop computers
+- Laptops
+- Mobile browsers (optional support)
+
+**Software interfaces:**
+
+- Web server
+- Relational database (MySQL)
+
+**Communication interfaces:**
+
+- HTTP / HTTPS protocols
+
+**Memory / storage constraints:**
+
+Minimal storage required for request records.
+
+**Operations:**
+
+- Normal mode
+- Maintenance mode
+
+**Site adaptation:**
+
+Admin configuration settings may differ between departments.
+
+---
+
+## 2.2 · Product Functions
+
+Major system functions include:
+
+- Employee submits supply request
+- Admin views submitted requests
+- Admin approves or rejects requests
+- System stores request history
+- Users track request status
+
+---
+
+## 2.3 · User Characteristics
+
+| User Class | Description | Expertise | Frequency |
+|-----------|-------------|-----------|-----------|
+| Admin | Manages requests and approvals | Intermediate | Daily |
+| Employee | Submits requests | Basic | Weekly |
+| Auditor | Reviews request logs | Expert | Quarterly |
+
+---
+
+## 2.4 · Constraints
+
+- Must operate in modern browsers
+- Must follow organizational IT policies
+- Must maintain audit logging capability
+- Must ensure secure authentication
+- Must support role-based access
+
+---
+
+## 2.5 · Assumptions and Dependencies
+
+- Users already have login credentials
+- Database server is available
+- Stable internet connection exists
+- Organization provides hosting infrastructure
+
+---
+
+## 2.6 · Apportioning of Requirements
+
+Future versions may include:
+
+- Email notifications
+- Inventory integration
+- Supplier management integration
+
+---
+
+# § 03 · Specific Requirements
+
+## 3.1 · External Interface Requirements
+
+### 3.1.1 · User Interfaces
+
+The system includes:
+
+Login screen  
+Employee dashboard  
+Request form  
+Admin dashboard  
+Approval interface  
+
+Error messages display clearly with validation prompts.
+
+---
+
+### 3.1.2 · Hardware Interfaces
+
+Supports:
+
+Desktop computers  
+Laptops  
+Standard keyboard and mouse  
+
+---
+
+### 3.1.3 · Software Interfaces
+
+Database: MySQL  
+Server: Apache / Node.js environment  
+
+---
+
+### 3.1.4 · Communications Interfaces
+
+Protocols used:
+
+HTTPS  
+REST-based internal communication  
+
+Security:
+
+TLS encryption required
+
+---
+
+## 3.2 · Functional Requirements
+
+### FR-01 · Submit Request
+
+**Description:** Employee submits supply request
+
+**Inputs:**
+
+Employee name  
+Item name  
+Quantity  
+
+**Processing:**
+
+Validate required fields  
+Store request in database  
+
+**Outputs:**
+
+Confirmation message displayed
+
+**Preconditions:**
+
+User logged in
+
+**Postconditions:**
+
+Request stored successfully
+
+**Error handling:**
+
+Display validation message if fields missing
+
+**Priority:** Must
+
+**Traces to:** Employee request workflow requirement
+
+---
+
+### FR-02 · View Requests
+
+**Description:** Admin views submitted requests
+
+**Inputs:**
+
+Request database records
+
+**Processing:**
+
+Retrieve request list
+
+**Outputs:**
+
+Display request table
+
+**Preconditions:**
+
+Admin logged in
+
+**Postconditions:**
+
+Requests visible
+
+**Error handling:**
+
+Display error if retrieval fails
+
+**Priority:** Must
+
+**Traces to:** Admin monitoring workflow
+
+---
+
+### FR-03 · Approve or Reject Request
+
+**Description:** Admin approves or rejects requests
+
+**Inputs:**
+
+Request selection
+
+**Processing:**
+
+Update request status
+
+**Outputs:**
+
+Updated request status displayed
+
+**Preconditions:**
+
+Admin authenticated
+
+**Postconditions:**
+
+Request status updated
+
+**Error handling:**
+
+Prevent duplicate approvals
+
+**Priority:** Must
+
+**Traces to:** Approval workflow requirement
+
+---
+
+## 3.3 · Non-Functional Requirements
+
+### 3.3.1 · Performance Requirements
+
+Supports:
+
+100 concurrent users  
+Response time under 2 seconds  
+
+---
+
+### 3.3.2 · Safety Requirements
+
+Prevent accidental deletion of request records
+
+---
+
+### 3.3.3 · Security Requirements
+
+Secure login authentication  
+Role-based access control  
+Encrypted HTTPS communication  
+Audit logging enabled  
+
+---
+
+### 3.3.4 · Software Quality Attributes
+
+| Attribute | Requirement |
+|----------|-------------|
+| Reliability | System uptime 99% |
+| Availability | 24/7 internal access |
+| Maintainability | Modular architecture |
+| Portability | Browser-based access |
+| Usability | Minimal training required |
+| Accessibility | Keyboard navigation supported |
+
+---
+
+### 3.3.5 · Business Rules
+
+Only administrators can approve or reject requests
+
+---
+
+## 3.5 · Other Requirements
+
+### 3.5.1 · Database Requirements
+
+Stores:
+
+User details  
+Request details  
+Approval status  
+Timestamps  
+
+---
+
+### 3.5.2 · Internationalisation / Localisation
+
+Supports English language initially
+
+Future support:
+
+Dzongkha language interface
+
+---
+
+### 3.5.3 · Legal, Regulatory, Compliance
+
+Must comply with organizational IT security policies
+
+---
+
+# § 04 · Verification
+
+| Req ID | Verification Method | Acceptance Criterion |
+|-------|--------------------|---------------------|
+| FR-01 | Test | Request saved successfully |
+| FR-02 | Demonstration | Admin views request list |
+| FR-03 | Test | Status updated correctly |
+| Security | Inspection | HTTPS enabled |
+
+---
+
+# § 05 · Appendices
+
+## A. Analysis Models
+
+Future diagrams:
+
+Use-case diagram  
+Activity diagram  
+ER diagram  
+
+---
+
+## B. Requirements Traceability Matrix
+
+| Req ID | Source | Design Element | Test Case | Status |
+|-------|--------|---------------|-----------|-------|
+| FR-01 | Employee workflow | Request module | TC-01 | Pending |
+| FR-02 | Admin workflow | Admin dashboard | TC-02 | Pending |
+
+---
+
+## C. Issues List
+
+Pending:
+
+Email notification integration decision
+
+---
+
+## D. Glossary
+
+Admin: System manager  
+Employee: Request creator  
+
+---
+
+# Changelog
+
+v0.1 · initial draft · Author · 2026-04-21
+
+---
+
+# Sign-off
+
+| Role | Name | Signature | Date |
+|-----|------|-----------|------|
+| Author (BA) | | | |
+| Dev Lead | | | |
+| QA Lead | | | |
+| Architect | | | |
+| Product Owner | | | |
+| Compliance | | | |
+| Customer Representative | | | |
