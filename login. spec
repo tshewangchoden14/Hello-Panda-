@@ -25,7 +25,6 @@ To solve these issues, a role-based Office Inventory Dashboard system with a sec
 * As an employee, I want to view my request history.
 * As an employee, I want notifications when request status changes.
 * As an employee, I want to suggest new inventory items.
-
 ### Admin User Stories
 
 * As an admin, I want to log in securely.
