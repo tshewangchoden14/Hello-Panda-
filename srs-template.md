@@ -137,7 +137,7 @@ State the purpose of this SRS and the intended readership (developers, testers, 
 
 ### 1.2 · Scope of the Product
 - **Product name:** `<Office Supplies Request System>`
-- **What the product will do:** `<>`
+- **What the product will do:** `<request office supplies form>`
 - **What the product will NOT do:** `<one paragraph — scope boundaries>`
 - **Benefits / goals:** `<business outcomes>`
 - **Applicability:** `<target users, deployment contexts>`
