@@ -13,9 +13,9 @@ A structured system will improve efficiency and transparency.
 
 ## 2. User Story
 
-As a <employee at SELISE Bhutan>,
-I want to <request office supplies though a form>,
-So that <my request are properly tracked and approved quickly>.
+As a employee at SELISE Bhutan,
+I want to request office supplies though a form,
+So that my request are properly tracked and approved quickly.
 ---
 
 ## 3. Acceptance Criteria
