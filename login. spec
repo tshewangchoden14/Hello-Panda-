@@ -1,7 +1,6 @@
 # Office Inventory Dashboard System Specification (SELISE)
 
 ## 1. Problem / Why
-
 Currently, office inventory requests (e.g., notepads, stationery, snacks, slippers) are handled through informal communication such as verbal requests or chat messages. This causes:
 
 * Lost or delayed requests
