@@ -20,7 +20,6 @@ So that <my request are properly tracked and approved quickly>.
 
 ## 3. Acceptance Criteria
 
-
 - User can open the request form
 - User can submit a request successfully
 - Admin can approve or reject requests
@@ -135,12 +134,7 @@ State the purpose of this SRS and the intended readership (developers, testers, 
 - **Product name:** `<Office Supplies Request System>`
 - **What the product will do:** `<The system allows employees to submit office supply requests through a structured digital form. Administrators can review, approve, or reject requests and maintain tracking records>`
 - **What the product will NOT do:** `<The system will not manage supplier procurement workflows, inventory automation, payment processing, or logistics tracking. It only handles request submission and approval workflow within the organization>`
-- **Benefits / goals:** 
-`< Reduce manual request handling
-- Improve tracking transparency
-- Speed up approval workflow
-- Maintain request history records
-- Improve communication between employees and administrators>`
+- **Benefits / goals:** `< Reduce manual request handling, Improve tracking transparency, Speed up approval workflow, Maintain request history records, Improve communication between employees and administrators>`
 - **Applicability:** `<Target users include employees and administrators within an organization using a web-based interface accessible through modern browsers>`
 
 ### 1.3 · Definitions, Acronyms, Abbreviations
