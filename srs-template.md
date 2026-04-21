@@ -131,11 +131,16 @@ Example:
 State the purpose of this SRS and the intended readership (developers, testers, auditors, regulators, customer).
 
 ### 1.2 · Scope of the Product
-- **Product name:** `<Office Supplies Request System>`
-- **What the product will do:** `<The system allows employees to submit office supply requests through a structured digital form. Administrators can review, approve, or reject requests and maintain tracking records>`
-- **What the product will NOT do:** `<The system will not manage supplier procurement workflows, inventory automation, payment processing, or logistics tracking. It only handles request submission and approval workflow within the organization>`
-- **Benefits / goals:** `< Reduce manual request handling, Improve tracking transparency, Speed up approval workflow, Maintain request history records, Improve communication between employees and administrators>`
-- **Applicability:** `<Target users include employees and administrators within an organization using a web-based interface accessible through modern browsers>`
+- **Product name:** 
+Office Supplies Request System
+- **What the product will do:** 
+The system allows employees to submit office supply requests through a structured digital form. Administrators can review, approve, or reject requests and maintain tracking records.
+- **What the product will NOT do:** 
+The system will not manage supplier procurement workflows, inventory automation, payment processing, or logistics tracking. It only handles request submission and approval workflow within the organization.
+- **Benefits / goals:** 
+Reduce manual request handling, Improve tracking transparency, Speed up approval workflow, Maintain request history records, Improve communication between employees and administrators.
+- **Applicability:** 
+Target users include employees and administrators within an organization using a web-based interface accessible through modern browsers.
 
 ### 1.3 · Definitions, Acronyms, Abbreviations
 | Term | Meaning |
@@ -151,13 +156,11 @@ State the purpose of this SRS and the intended readership (developers, testers, 
 3.Web Browser Compatibility Standards (ECMAScript 2020+)
 
 ### 1.5 · Overview of this Document
-One short paragraph: what each remaining section contains. Readers use this as a navigation map.
 This document describes system overview, user roles, constraints, functional requirements, interface specifications, and verification criteria required to implement the Office Supplies Request System successfully.
+
 ---
 
 ## § 02 · Overall Description
-
-*The "big picture" section. Non-specialists read this and specialists skim it.*
 
 ### 2.1 · Product Perspective
 The Office Supplies Request System is a standalone web-based internal organizational tool.
