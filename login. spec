@@ -10,7 +10,6 @@ Currently, office inventory requests (e.g., notepads, stationery, snacks, slippe
 * No usage analytics for administrators
 
 Additionally, there is no centralized login mechanism to control system access.
-
 To solve these issues, a role-based Office Inventory Dashboard system with a secure login page, employee request interface, and admin inventory management panel is required.
 
 ---
