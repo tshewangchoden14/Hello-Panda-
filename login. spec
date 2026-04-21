@@ -1,0 +1,108 @@
+# Office Inventory Dashboard System Specification (SELISE)
+
+## 1. Problem / Why
+
+Currently, office inventory requests (e.g., notepads, stationery, snacks, slippers) are handled through informal communication such as verbal requests or chat messages. This causes:
+
+* Lost or delayed requests
+* No tracking visibility for employees
+* Manual stock update errors
+* No approval workflow
+* No usage analytics for administrators
+
+Additionally, there is no centralized login mechanism to control system access.
+
+To solve these issues, a role-based Office Inventory Dashboard system with a secure login page, employee request interface, and admin inventory management panel is required.
+
+---
+
+## 2. User Stories
+
+### Employee User Stories
+
+* As an employee, I want to log in securely using my office email.
+* As an employee, I want to submit inventory requests easily.
+* As an employee, I want my personal details auto-filled.
+* As an employee, I want to track request status (Pending / Approved / Rejected).
+* As an employee, I want to view my request history.
+* As an employee, I want notifications when request status changes.
+* As an employee, I want to suggest new inventory items.
+
+### Admin User Stories
+
+* As an admin, I want to log in securely.
+* As an admin, I want to view all incoming requests.
+* As an admin, I want to approve or reject requests.
+* As an admin, I want inventory to update automatically after approval.
+* As an admin, I want to monitor stock levels.
+* As an admin, I want alerts for low stock items.
+* As an admin, I want to generate usage analytics reports.
+
+---
+
+## 3. Acceptance Criteria
+
+### Login Page
+
+* User must enter email
+* User must enter password
+* User must select role (Admin or Employee)
+* Login must redirect user to correct dashboard
+* SELISE logo must be displayed
+* SELISE background image must be displayed
+
+### Employee Dashboard
+
+Employee must be able to:
+
+* Submit request with:
+
+  * Item name
+  * Quantity
+  * Purpose
+  * Urgency level
+
+System must:
+
+* Auto-fill employee name, department, email
+* Show request status:
+
+  * Pending (Yellow)
+  * Approved (Green)
+  * Rejected (Red)
+* Show request history
+* Show notifications when request updated
+
+### Admin Dashboard
+
+Admin must be able to:
+
+* View all requests
+* Approve requests
+* Reject requests
+* Add comments
+* Update inventory automatically after approval
+* Edit stock manually if needed
+
+### Inventory Module
+
+System must:
+
+* Display real-time stock levels
+* Show low-stock alerts
+* Allow adding new inventory items
+
+### Reports Module
+
+Admin must be able to:
+
+* View most requested items
+* View monthly reports
+* View quarterly reports
+* Export reports (CSV / PDF)
+
+---
+
+## 4. UI Notes / Sketch
+
+### Login Page Layout
