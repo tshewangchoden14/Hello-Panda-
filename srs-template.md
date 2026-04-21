@@ -1,15 +1,14 @@
-# Feature Spec: <Feature Name>
+# Feature Spec:
 
 Office Supplies Request System
 
 ---
 
-## 1. Problem / Why
+## 1. Problem / Whys
 
 Currently, users request services through informal channels like chat or email.
 This causes delays, missing requests, and confusion in tracking status.
 A structured system will improve efficiency and transparency.
-
 ---
 
 ## 2. User Story
@@ -18,8 +17,6 @@ A structured system will improve efficiency and transparency.
 As a <employee at SELISE Bhutan>,
 I want to <request office supplies though a form>,
 So that <my request are properly tracked and approved quickly>.
-
-
 ---
 
 ## 3. Acceptance Criteria
@@ -137,10 +134,15 @@ State the purpose of this SRS and the intended readership (developers, testers, 
 
 ### 1.2 · Scope of the Product
 - **Product name:** `<Office Supplies Request System>`
-- **What the product will do:** `<request office supplies form>`
-- **What the product will NOT do:** `<one paragraph — scope boundaries>`
-- **Benefits / goals:** `<business outcomes>`
-- **Applicability:** `<target users, deployment contexts>`
+- **What the product will do:** `<The system allows employees to submit office supply requests through a structured digital form. Administrators can review, approve, or reject requests and maintain tracking records>`
+- **What the product will NOT do:** `<The system will not manage supplier procurement workflows, inventory automation, payment processing, or logistics tracking. It only handles request submission and approval workflow within the organization>`
+- **Benefits / goals:** 
+`< Reduce manual request handling
+- Improve tracking transparency
+- Speed up approval workflow
+- Maintain request history records
+- Improve communication between employees and administrators>`
+- **Applicability:** `<Target users include employees and administrators within an organization using a web-based interface accessible through modern browsers>`
 
 ### 1.3 · Definitions, Acronyms, Abbreviations
 | Term | Meaning |
