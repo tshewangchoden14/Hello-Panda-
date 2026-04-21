@@ -156,3 +156,4 @@ Analytics data
 Supplier integration  
 Auto-restocking alerts  
 Forecast-based inventory planning
+
