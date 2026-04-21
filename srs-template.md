@@ -1,7 +1,5 @@
-# Feature Spec:
 
 Office Supplies Request System
-
 ---
 
 ## 1. Problem / Whys
